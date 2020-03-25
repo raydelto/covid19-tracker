@@ -1,3 +1,9 @@
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
     content: " \25B4\25BE" 
 }
+
+.covid-footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+}
