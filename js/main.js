@@ -11,8 +11,8 @@ function getData(){
             keys.map((key,j)=>{
                 let col = row.insertCell(j);
                 if(j == 0){
-                    col.scope="row";
-                    col.outerHTML = "<th scope=\"row\">" + entry[key] + "</th>";
+                    col.innerHTML = entry[key];
+                    col.classList.add('font-weight-bold')                   
                     return;
                 }
                 col.innerHTML = entry[key] === '' ? 0 : entry[key];
